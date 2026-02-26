@@ -13,7 +13,7 @@ export default function ContactSection() {
           <h2 className="text-4xl md:text-5xl font-serif mb-6 text-navy">
             Get in Touch
           </h2>
-          <p className="text-navy/50 mb-12 max-w-sm font-light">
+          <p className="text-navy/50 mb-12 max-w-sm">
             Strict confidentiality is maintained for all inquiries.
           </p>
 
@@ -65,7 +65,7 @@ export default function ContactSection() {
                 <p className="text-bronze text-xl font-serif italic mb-2">
                   Thank you.
                 </p>
-                <p className="text-navy/50 text-sm font-light">
+                <p className="text-navy/50 text-sm">
                   We will be in touch shortly.
                 </p>
               </div>
@@ -84,16 +84,6 @@ export default function ContactSection() {
                     placeholder="Email"
                     className="w-full bg-transparent border-b border-navy/15 py-4 focus:outline-none focus:border-bronze transition-colors duration-300 text-navy placeholder-navy/30"
                   />
-                </div>
-                <div className="relative">
-                  <select className="w-full bg-transparent border-b border-navy/15 py-4 focus:outline-none focus:border-bronze transition-colors duration-300 text-navy/50">
-                    <option>Select Practice Area</option>
-                    <option>Corporate</option>
-                    <option>Litigation</option>
-                    <option>Real Estate</option>
-                    <option>Family Law</option>
-                    <option>Criminal Law</option>
-                  </select>
                 </div>
                 <div className="relative">
                   <textarea

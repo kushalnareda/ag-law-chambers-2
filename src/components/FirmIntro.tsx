@@ -38,35 +38,11 @@ export default function FirmIntro() {
           <h2 className="text-sm font-bold uppercase tracking-widest text-bronze mb-4">
             The Firm
           </h2>
-          <div className="w-full h-px bg-white/10 mb-8" />
-          <div className="stats-grid grid grid-cols-2 gap-8">
-            <div>
-              <span
-                className="block text-4xl font-serif text-white mb-1 counter"
-                data-target="25"
-              >
-                0
-              </span>
-              <span className="text-[10px] uppercase tracking-widest text-slate">
-                Years Experience
-              </span>
-            </div>
-            <div>
-              <span
-                className="block text-4xl font-serif text-white mb-1 counter"
-                data-target="150"
-              >
-                0
-              </span>
-              <span className="text-[10px] uppercase tracking-widest text-slate">
-                Corporate Partners
-              </span>
-            </div>
-          </div>
+          <div className="w-full h-px bg-white/10" />
         </div>
 
         <div className="md:col-span-8">
-          <h3 className="text-3xl md:text-5xl font-serif leading-tight mb-8 text-white/90">
+          <h3 className="text-3xl md:text-5xl font-serif leading-tight mb-8 text-white font-light">
             &ldquo;We do not merely interpret the law;
             <br /> we{" "}
             <span className="italic text-bronze">architect solutions</span>.&rdquo;
@@ -75,14 +51,7 @@ export default function FirmIntro() {
             <p>
               Founded on the principles of rigorous analysis and unwavering
               ethics, AG Law Chambers has established itself as a pillar of the
-              legal community in New Delhi. We believe that effective
-              representation requires not just knowledge of the statute, but an
-              understanding of the business environment.
-            </p>
-            <p>
-              Our firm specializes in high-stakes litigation and complex
-              corporate structuring, offering a boutique experience with the
-              capabilities of a large multinational practice.
+              legal community in Jaipur.
             </p>
           </div>
         </div>

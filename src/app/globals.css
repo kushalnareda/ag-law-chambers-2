@@ -4,11 +4,23 @@
   --font-sans: "Montserrat", sans-serif;
   --font-serif: "Cormorant Garamond", serif;
 
-  --color-navy: #0b1120;
-  --color-charcoal: #1a1a1a;
-  --color-bronze: #b89e72;
-  --color-cream: #f5f5f0;
-  --color-slate: #94a3b8;
+  /* Lighter Beige Theme Palette */
+  --color-navy: #F7F5EC;
+  /* The new background, a sophisticated beige */
+  --color-charcoal: #EAE6DA;
+  /* Slightly darker beige for cards/sections */
+  --color-bronze: #A07B37;
+  /* Darker bronze/gold for readable accents */
+  --color-cream: #1C1A17;
+  /* Very dark charcoal for readable body text */
+  --color-slate: #5E5B55;
+  /* Muted dark tone for secondary text */
+
+  /* Override default white/black to seamlessly invert the site */
+  --color-white: #1C1A17;
+  /* 'text-white' renders as dark, solid text */
+  --color-black: #F7F5EC;
+  /* 'bg-black' renders as beige background */
 }
 
 /* Smooth Scrolling Setup */
@@ -96,6 +108,7 @@ html.lenis {
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -104,9 +117,17 @@ html.lenis {
 
 /* Scroll down indicator animation */
 @keyframes scrollDown {
-  0% { transform: translateY(-100%); }
-  50% { transform: translateY(0%); }
-  100% { transform: translateY(100%); }
+  0% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
 }
 
 .animate-scroll-down {
@@ -118,3 +139,58 @@ html.lenis {
   perspective: 1000px;
 }
 
+/* Modal Animations */
+.animate-in {
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  animation-fill-mode: forwards;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+}
+
+.zoom-in-95 {
+  animation-name: zoomIn95;
+}
+
+@keyframes zoomIn95 {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Office gallery — vertical infinite scroll */
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scrollDownSlow {
+  0% {
+    transform: translateY(-50%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-scroll-up {
+  animation: scrollUp linear infinite;
+}
+
+.animate-scroll-down-slow {
+  animation: scrollDownSlow linear infinite;
+}

@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import DisclaimerModal from "@/components/DisclaimerModal";
 import LoadingScreen from "@/components/LoadingScreen";
 import SmoothScroll from "@/components/SmoothScroll";
+import GateKeeper from "@/components/GateKeeper";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -37,8 +38,10 @@ export default function RootLayout({
         <SmoothScroll>
           <LoadingScreen />
           <DisclaimerModal />
-          <Navbar />
-          <main>{children}</main>
+          <GateKeeper>
+            <Navbar />
+            <main>{children}</main>
+          </GateKeeper>
         </SmoothScroll>
       </body>
     </html>

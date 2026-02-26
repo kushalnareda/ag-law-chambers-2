@@ -18,7 +18,7 @@ export default function SubpageLayout({ subtitle, title, children }: SubpageLayo
             <p className="text-bronze text-xs font-bold uppercase tracking-widest mb-4">
               {subtitle}
             </p>
-            <h1 className="text-4xl md:text-6xl font-serif text-white">{title}</h1>
+            <h1 className="text-4xl md:text-6xl font-serif text-white font-light">{title}</h1>
           </div>
 
           {/* Content */}
@@ -30,7 +30,7 @@ export default function SubpageLayout({ subtitle, title, children }: SubpageLayo
           <div className="mt-16 pt-16 border-t border-white/10">
             <Link
               href="/"
-              className="text-xs uppercase tracking-widest text-bronze hover:text-white transition-colors flex items-center gap-2"
+              className="text-xs uppercase tracking-widest text-bronze hover:text-white font-light transition-colors flex items-center gap-2"
             >
               <ArrowLeft size={14} /> Back to Home
             </Link>

@@ -26,10 +26,10 @@ export default function PracticePreview() {
     <section className="py-32 bg-charcoal">
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-end mb-20">
-          <h2 className="text-4xl md:text-6xl font-serif text-white">Expertise</h2>
+          <h2 className="text-4xl md:text-6xl font-serif text-white font-light">Expertise</h2>
           <Link
-            href="/practice"
-            className="text-xs uppercase tracking-widest text-slate hover:text-white border-b border-transparent hover:border-white pb-1 transition-all"
+            href="/expertise"
+            className="text-xs uppercase tracking-widest text-slate font-light hover:text-white font-light border-b border-transparent hover:border-white pb-1 transition-all"
           >
             View All Areas
           </Link>
@@ -44,11 +44,11 @@ export default function PracticePreview() {
               <div className="flex flex-col md:flex-row justify-between md:items-center gap-6">
                 <div className="flex items-baseline gap-6 md:w-1/3">
                   <span className="text-xs font-mono text-bronze">{p.num}</span>
-                  <h3 className="text-3xl font-serif text-slate group-hover:text-white group-hover:italic transition-all">
+                  <h3 className="text-3xl font-serif text-slate font-light group-hover:text-white font-light group-hover:italic transition-all">
                     {p.title}
                   </h3>
                 </div>
-                <p className="text-sm text-slate md:w-1/3 opacity-50 group-hover:opacity-100 transition-opacity">
+                <p className="text-sm text-slate font-light md:w-1/3 opacity-50 group-hover:opacity-100 transition-opacity">
                   {p.desc}
                 </p>
                 <div className="md:w-12 flex justify-end">
